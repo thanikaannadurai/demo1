@@ -3,136 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thanika's Personal Website</title>
+    <title>Dr. Dalvin Vinoth Kumar | Researcher in Deep Learning & IoT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* General Body Styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f8ff;
+            background-color: #f5f5f5;
+            color: #333;
         }
-
-        /* Header Styling */
-        header {
-            background-color: #3498db;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 3em;
-        }
-
-        /* Navigation Menu Styling */
-        nav {
-            background-color: #2c3e50;
-            overflow: hidden;
-        }
-
-        nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-size: 1.2em;
-        }
-
-        nav a:hover {
-            background-color: #2980b9;
-        }
-
-        /* Main Content Section */
-        .main-content {
+        .navbar {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             padding: 20px;
-        }
-
-        .main-content .left {
-            flex: 1;
-            padding: 20px;
-        }
-
-        .main-content .right {
-            flex: 1;
-            text-align: center;
-        }
-
-        /* Image Styling */
-        .main-content .right img {
-            border-radius: 50%;
-            width: 200px;
-            height: 200px;
-        }
-
-        /* Footer Styling */
-        footer {
-            background-color: #3498db;
+            background: #222;
             color: white;
-            text-align: center;
-            padding: 10px;
             position: fixed;
             width: 100%;
-            bottom: 0;
+            top: 0;
+            left: 0;
+            z-index: 1000;
         }
-
-        footer p {
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 3em;
             margin: 0;
         }
-
-        /* Mobile Responsiveness */
-        @media (max-width: 768px) {
-            .main-content {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            nav a {
-                float: none;
-                display: block;
-                text-align: left;
-                padding: 12px;
-            }
+        .hero h2 {
+            font-size: 1.5em;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin-top: 20px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        .container {
+            max-width: 900px;
+            margin: 80px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-
-    <!-- Header -->
-    <header>
-        <h1>Thanika's Personal Website</h1>
-    </header>
-
-    <!-- Navigation Menu -->
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+    <nav class="navbar">
+        <h3>Dr. Dalvin Vinoth Kumar</h3>
     </nav>
-
-    <!-- Main Content -->
-    <div class="main-content">
-        <!-- Left Section (About Me) -->
-        <div class="left" id="about">
+    
+    <section class="hero">
+        <h1>Dr. Dalvin Vinoth Kumar</h1>
+        <h2>Researcher in Deep Learning & IoT</h2>
+        <a href="#" class="btn">View Research</a>
+    </section>
+    
+    <div class="container">
+        <section>
             <h2>About Me</h2>
-            <p>Hello! I'm Thanika, currently pursuing my Master's in Economics at Christ University. I'm passionate about economics, data analysis, and applying economic theories to real-world problems.</p>
-        </div>
+            <p>Dedicated researcher specializing in Deep Learning and IoT, with a strong focus on Medical Image Analytics.</p>
+        </section>
 
-        <!-- Right Section (Your Image) -->
-        <div class="right">
-            <img src="your-image.jpg" alt="Thanika">
-        </div>
+        <section>
+            <h2>Research Interests</h2>
+            <ul>
+                <li>Deep Learning</li>
+                <li>Internet of Things (IoT)</li>
+                <li>Medical Image Analytics</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Publications</h2>
+            <p>Explore my latest research papers on Deep Learning and IoT applications.</p>
+        </section>
     </div>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Thanika. All Rights Reserved.</p>
-    </footer>
-
 </body>
 </html>
